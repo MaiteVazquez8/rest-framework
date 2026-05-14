@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jujutsu Kaisen — Hechiceros y Maldiciones</title>
+    <meta name="description" content="Entra al mundo de Jujutsu Kaisen: hechiceros, maldiciones y técnicas malditas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="logo">呪術 <span class="logo-accent">KAISEN</span></div>
+            <div class="nav-links">
+                <a href="#personajes">Personajes</a>
+                <a href="#tecnicas">Técnicas</a>
+                <a href="#historia">Historia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">呪術廻戦</p>
+            <h1 class="hero-title">
+                JUJUTSU<br />
+                <span class="gradient-text">KAISEN</span>
+            </h1>
+            <p class="hero-desc">
+                Donde las maldiciones nacen del miedo y los hechiceros las devuelven al vacío.
+            </p>
+            <a href="#personajes" class="hero-cta">Conoce a los hechiceros</a>
+        </div>
+        <div class="hero-scroll">SCROLL ↓</div>
+    </header>
+
+    <section id="personajes" class="section">
+        <div class="section-header">
+            <p class="section-label">CAST</p>
+            <h2 class="section-title">Hechiceros</h2>
+        </div>
+        <div class="cards" id="cards"></div>
+    </section>
+
+    <section id="tecnicas" class="section section-alt">
+        <div class="section-header">
+            <p class="section-label">JUTSU</p>
+            <h2 class="section-title">Técnicas Malditas</h2>
+        </div>
+        <div class="jutsus" id="jutsus"></div>
+    </section>
+
+    <section id="historia" class="section">
+        <div class="section-header">
+            <p class="section-label">STORY</p>
+            <h2 class="section-title">La Historia</h2>
+        </div>
+        <p class="story-text">
+            Yuji Itadori, un estudiante con habilidades físicas extraordinarias, lleva una vida tranquila
+            hasta que conoce a Megumi Fushiguro. Para salvar a sus amigos de una maldición, devora un dedo
+            de Ryomen Sukuna y se convierte en su recipiente. Ahora estudia en la
+            <span class="story-highlight">Escuela Técnica Superior de Jujutsu de Tokio</span>
+            bajo la guía de Satoru Gojo.
+        </p>
+    </section>
+
+    <footer class="footer">
+        呪術廻戦 · FAN PAGE · NO OFICIAL
+    </footer>
+
+    <script>
+        const STATIC_URL = "{% static '' %}";
+    </script>
+
+    <script type="module" src="{% static 'Scripts/main.js' %}"></script>
+</body>
+
+</html>
